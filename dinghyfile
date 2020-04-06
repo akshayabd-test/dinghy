@@ -1,0 +1,16 @@
+{
+  "application": "spin",
+  "pipelines": [
+    {
+      "application": "spin",
+      "name": "pipeline_stage3",
+      "keepWaitingPipelines": false,
+      "lastModifiedBy": "admin",
+      "limitConcurrent": true,
+      "stages": [
+        {{ module "wait.stage.module" }}
+      ],
+      "triggers": []
+    }
+  ]
+}
